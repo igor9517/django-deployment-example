@@ -1,0 +1,47 @@
+{% extends "streamcardio_app/base.html" %}
+{% load staticfiles %}
+
+{% block body_block %}
+<div class="container text-center">
+	<h4>Контакты</h4>
+	<p>Телефон: +7(905)535-55-56</p>
+	<p>Электронная почта: streamcardio@ya.ru</p>
+
+	<div class="container-fluid">
+	    <div class="map-responsive">
+	   		<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Eiffel+Tower+Paris+France" width="400" height="400" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+		</div>
+	</div>
+
+	<p></p>
+
+	<div class="container">
+	<div class="col-md-5">
+	    <div class="form-area">  
+	        <form role="form">
+	        <br style="clear:both">
+	                    <h4 style="margin-bottom: 25px; text-align: center;">Свяжитесь с нами</h4>
+	    				<div class="form-group">
+							<input type="text" class="form-control" id="name" name="name" placeholder="Имя" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Номер телефона" required>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" id="subject" name="subject" placeholder="Тема" required>
+						</div>
+	                    <div class="form-group">
+	                    <textarea class="form-control" type="textarea" id="message" placeholder="Сообщение" maxlength="140" rows="7"></textarea>                
+	                    </div>
+	            
+	        <button type="button" id="submit" name="submit" class="btn btn-success pull-right">Отправить заявку</button>
+	        </form>
+	    </div>
+	</div>
+	</div>
+
+</div>
+{% endblock body_block %}
